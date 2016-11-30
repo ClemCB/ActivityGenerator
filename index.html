@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="stylesheet" type="text/css" href="mycss.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="logo.png" />
+        <title>Activity Suggester for kids and their Independent Visitors</title>
+            <script>
+    
+    var images = ["2.png", "3.png", "4.png", "5.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png", "14.png", "15.png"];
+	var currentImage = 0; //defaults to image1.jpg
+
+function goNext() {
+    currentImage += 1;
+
+    //loop back to the first image
+    if(currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    document.getElementById("mainImage").src = images[currentImage];
+}  
+            </script>
+    </head>
+    <body>
+
+
+           <div class="header">
+      <div class="container">
+        <ul class="nav">
+          <ul>
+                <li><a href="https://clemcb.github.io/index.html">Home</a></li>
+                <li><a href="https://clemcb.github.io/about-iv.html">About Independent Visitors</a></li>
+                <li><a href="https://clemcb.github.io/about-this-website.html">About this site</a></li>
+            <li><a href="https://clemcb.github.io/contact.html">Contact</a></li></ul>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="main">
+   		<h1 class="main">Welcome!</h1>
+   		<h2 class="main">Find an activity for you and your Independent Visitor.</h1><br>
+   		<br>
+ 
+ 
+<img src="1.png" id="mainImage" class="mainimage" >
+ <br><br>
+ 	<button type="button" class="btn-main1">For Boys</button>
+ 	<button type="button" class="btn-main1">For Girls</button>
+ 	<input type="button" class="btn-main2" value="What is gender anyway?" onclick="goNext()" />
+ <br><br>
+
+ 
+
+ 		<div class="social-share">Looks great! Share this activity with my IV/young person:  
+ 		<img style="vertical-align:middle" class="social-share-image" src="http://seeklogo.com/images/W/whatsapp-logo-8AE44BBBB0-seeklogo.com.gif">
+ 		<img style="vertical-align:middle" class="social-share-image" src="http://vectorlogo4u.com/wp-content/uploads/2015/10/Facebook-Messenger-vector-logo-720x340.png"> **
+ 	<br><br></div>
+ 		<p>** Functionality to follow.</p></div><br><br>
+ 
+ 
+ 
+   </div>
+    
+    <div class="footer">
+    	<p>This page was fuelled by pasta pesto at Founders and Coders, Palmers Road, October/November 2016.</p>
+    
+    
+    </div>
+
+
+    </body>
+</html>
